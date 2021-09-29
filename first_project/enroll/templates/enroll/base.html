@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Python</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+  </head>
+  <body>
+    <div class="container mt5">
+      <h1 class="text-center">CRUD OPERATION PYTHON</h1>
+    {% block content %} {% endblock content %}
+    </div>
+
+  <script src="{% static 'enroll/js/jquery.js' %}"></script>
+  <script src="{% static 'enroll/js/popper.js' %}"></script>
+  <script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+  </body>
+</html>

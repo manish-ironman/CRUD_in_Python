@@ -1,0 +1,22 @@
+{% extends 'enroll/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-8 offset-2">
+        <h4 class="alert-success text-center mt5" style="padding:1%">Update Student Details </h4>
+        <form method="post" action="">
+            {% csrf_token %}
+             {{form.as_p}}
+
+            <input type="submit" class="btn btn-success" value="Update">
+            <a href="{% url 'addandshow' %}" class="btn btn-info">Back to Home</a>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+{% endblock content %}
